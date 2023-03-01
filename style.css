@@ -1,0 +1,117 @@
+* {
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 300px;
+}
+body {
+    background-color: #cacaca;
+    margin: 0 30px;
+}
+.theTitle{
+    text-align: center;
+    font-size: 100px;
+}
+.Elements {
+    background-color: rgb(253, 253, 253);
+    padding: 5px;
+    font-size: 30px;
+}
+.theTag {
+    background-color: rgb(112, 112, 112);
+    font-size: 25px;
+    padding: 5px;
+}
+.group{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    margin: 30px 0;
+}
+ol {
+    list-style-type: upper-roman;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a.noDecoration{
+    text-decoration: none;
+    color: rgb(250, 0, 0);
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.bg-dark-gray{
+    background-color: gray;
+}
+.parentElement{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  
+}
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.card{
+    width: 150px;
+    height: 200px;
+    background: rgba(255, 0, 0, 0.418);
+    position: relative;
+}
+.cardLink{          
+    position:absolute;
+    top:  20px;
+    left: 20px;
+    font-size: 10px;
+}
+.header{
+    background-color: white;
+    padding: 20px 10px;
+}
+.headerPosition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoBrand{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logoBrand img {
+    size: 50px;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li a {
+    color:rgb(0, 0, 0) 
+}
+.gridWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.gridCard{
+    width: 250px;
+}
+.gridCard img{
+    width: 100%
+}
+
+@media screen and (max-width: 1000px){
+    .gridWrapper{
+        grid-template-columns: 1fr;
+    }
+}
+    
