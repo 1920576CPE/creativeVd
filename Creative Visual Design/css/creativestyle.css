@@ -74,12 +74,12 @@ nav ul li a {
     text-decoration: none;
 }
 .header__logo span {
-    color: var(--primary);
+    color: #ffa700;
+}
+nav ul li a:hover {
+   background-color: var(--primary);
 }
 
-nav ul li a:hover {
-    background-color: var(--primary);
-}
 nav ul li span{
     color: #ffa700;
 }
@@ -99,10 +99,13 @@ nav ul li span{
     .toggle__menu{
         display: block;
     }
+    nav.open ul {
+        left: 0;
+    }
     nav ul {
         display: block;
         position:absolute;
-        left:0;
+        right:-100%;
         top:6.5rem;
         width: 100%;
         height:100%;
@@ -465,8 +468,24 @@ text-align: center;
 }
 /*--------Trends---------*/
 
-.trends{
+.trendspage{
     padding: 6rem;
+}
+.trendspage h2{
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.trendspage p{
+    margin-bottom: 5rem;
+}
+.trendspage__content ul{
+    display: flex;
+}
+.trendspage__content ul li  {
+    list-style: none;
+}
+.trendspage__content ul li a{
+    color: var(--black);
 }
 
 
