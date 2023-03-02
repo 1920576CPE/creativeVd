@@ -588,9 +588,47 @@ text-align: center;
 .categories{
     padding-top: 6rem;
 }
-.categories p{
-    margin-bottom: 0.5rem;
+.categories{
+    display: flex;
+    justify-content: space-around;
 }
+
+.cardpost1{
+    display: flex;
+    width: 500px;
+    height: 103px;
+    background-color: #fcfcfc;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    
+}
+.cardpost1content p{
+    font-weight: bold;
+    margin: 1px;
+}
+.cardpost1content h6{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.trendsRight h3{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+}
+.trendspage__wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+
+}
+
+
+
+
+
 
 
 
