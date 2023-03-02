@@ -51,6 +51,8 @@ body{
 .header{
     background-color: var(--black);
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
   
     
 }
@@ -100,6 +102,7 @@ nav ul li span{
     width: 2rem;
     margin-bottom: 0.4rem;
     border-radius: 0.5rem;
+    transition: 0.5s ease;
 }
 @media (max-width:768px){
     .toggle__menu{
@@ -113,7 +116,7 @@ nav ul li span{
         display: block;
         position:absolute;
         right:-100%;
-        top:6.5rem;
+        top: 6.6rem;
         width: 100%;
         height:100vh;
         background-color:var(--white);
@@ -124,11 +127,30 @@ nav ul li span{
         display: block;
         width: 100%;
         padding: 0.5rem;
-        border-bottom: 1px black;
     }
     nav ul li a:hover {
         color: #2b2b2b;
-        background-color: var(--primary);
+    }
+    nav ul li  {
+        margin-top: 0px;
+        border-bottom: 1px solid rgb(139, 139, 139);
+    }
+    nav ul li:hover  {
+ 
+        border-bottom: 1px solid rgb(139, 139, 139);
+        background-color: #ffa700;
+    }
+    .toggle__menu.open span:nth-child(1){
+        transition: 0.5s ease;
+        transform: translate(-2px,7.3px) rotate(45deg);
+    }
+    .toggle__menu.open span:nth-child(2){
+        opacity: 0;
+        transition: 0s;
+    }
+    .toggle__menu.open span:nth-child(3){
+        transition: 0.5s ease;
+        transform: translate(-2px,-12px) rotate(-45deg);
     }
 }
 
@@ -137,17 +159,26 @@ nav ul li span{
 /*------------BANNER CSS START HERE --------*/
 
 .banner {
-    padding: 6rem;
+    padding-bottom: 6rem;
+    padding-top: 12rem;
 }
 .banner__wrapper {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
+@media (max-width:998px){
+    .banner__wrapper{
+        flex-direction: column;
+    }
+    .banner img {
+        width: 100% !important;
+    }
+}
 
 .banner__content h1 {
     color: var(--primary);
-    font-size: 5rem;
+    font-size: clamp(3rem, 5vw,5rem);
     line-height: 1
 
 }
@@ -173,7 +204,10 @@ nav ul li span{
     color: white;
     transition: .5s;
 }
-.banner__content h1,.banner__content p{
+.banner__content h1{
+    margin-bottom: 2rem;
+}
+.banner__content p{
     margin-bottom: 2rem;
     text-align: justify;
 }
@@ -181,7 +215,7 @@ nav ul li span{
 /*---------BANNER CSS ENDS HERE -----------*/
 
 .Services *{
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 .Services{
     background-color: var(--black);
@@ -189,11 +223,16 @@ nav ul li span{
     padding: 6rem 0;
 }
 .services_wrapper{
-    display: grid;
-    margin-top: 15rem;
+    display: flex;
+    margin-top: 6rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3rem;
     
+}
+@media (max-width:998px){
+    .services_wrapper{
+        flex-direction:column;
+    }
 }
 .services__type h3{
     color: var(--primary);
@@ -233,6 +272,14 @@ nav ul li span{
     align-items: center;
     gap:5rem ;
 }
+@media (max-width:998px){
+    .about__wrapper{
+        flex-direction:column;
+    }
+    .about img {
+        width: 100% !important;
+    }
+}
 .about__content h2{
     color: var(--primary);
     line-height: 1rem;
@@ -259,7 +306,7 @@ nav ul li span{
     width: 358px;
     height: 550px;
     background-color: #ffffff;
-    position: relative;
+    position: revert;
     border-radius: 1.8rem;
 }
 
@@ -273,6 +320,11 @@ nav ul li span{
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+@media (max-width:998px){
+    .trends__wrapper{
+        flex-direction:column;
+    }
 }
 .trendcard p{
     color: var(--black);
@@ -355,6 +407,14 @@ text-align: center;
 .footer ul li a{
     font-size: 1.2rem;
     color: var(--grey);
+}
+@media (max-width:998px){
+    .footer__wrapper{
+        flex-direction:column;
+    }
+    .icons{
+        flex-direction: column;
+    }
 }
 /*------Footer-------*/
 
@@ -487,10 +547,14 @@ text-align: center;
 }
 .trendspage h2{
     color: var(--primary);
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
 }
 .trendspage p{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    text-align: justify;
 }
 .trendspage__content ul {
     display: flex;
@@ -504,6 +568,31 @@ text-align: center;
     color: var(--black);
     text-decoration: none;
 }
+.trendspage__content a {
+    text-decoration: none;
+}
+.trendspage__content{
+    padding: 2rem;
+}
+.trendspage__content h2{
+    font-size: 1.5rem;
+}
+.trendspage__content h1{
+    color: var(--primary);
+    font-size: 3rem;
+}
+.trendspage__content p {
+    text-align: justify;
+}
+
+.categories{
+    padding-top: 6rem;
+}
+.categories p{
+    margin-bottom: 0.5rem;
+}
+
+
 
 
 
