@@ -39,7 +39,7 @@ body{
 
 @media (min-width: 1200px){
     .container{
-        width: 1170px;
+        width: 1200px;
 
     }
 
@@ -265,7 +265,7 @@ nav ul li span{
 }
 /*----------AboutCSS--------*/
 .about{
-    padding:6rem;
+    padding: 6rem;
 }
 .about__wrapper{
     display: flex;
@@ -420,7 +420,8 @@ text-align: center;
 
 /*------About Me-----*/
 .aboutMe{
-    padding: 6rem;
+    padding-top :12rem;
+    padding-bottom: 6rem;
 }
 .aboutMe__wrapper{
     display: flex;
@@ -490,7 +491,8 @@ text-align: center;
 }
 /*----------Services Page-------*/
 .web{
-    padding: 6rem;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
 }
 .web__wrapper{
     display: flex;
@@ -543,7 +545,9 @@ text-align: center;
 /*--------Trends---------*/
 
 .trendspage{
-    padding: 6rem;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    box-sizing: none;
 }
 .trendspage h2{
     color: var(--primary);
@@ -558,7 +562,7 @@ text-align: center;
 }
 .trendspage__content ul {
     display: flex;
-    gap: 2rem;
+    padding: 2rem 0;
     
 }
 .trendspage__content ul li  {
@@ -600,24 +604,6 @@ text-align: center;
     display: flex;
     justify-content: space-between;
 }
-.cardpost1{
-    display: flex;
-    width: 500px;
-    height: 103px;
-    background-color: #fcfcfc;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    gap: 1rem;
-    
-}
-.cardpost1content p{
-    font-weight: bold;
-    margin: 1px;
-}
-.cardpost1content h6{
-    font-size: 1rem;
-    font-weight: 500;
-}
 
 .trendsRight h3{
     font-size: 2rem;
@@ -628,7 +614,7 @@ text-align: center;
 .trendspage__wrapper{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 4rem;
+    grid-gap: 2rem;
 
 }
 .trendsRight h2{
@@ -644,24 +630,23 @@ text-align: center;
     display: flex;
     gap:1.5rem;
     align-items: center;
-    margin: 2rem;
+    margin: 2rem 0;
 }
-.thePost h4{
-    text-align: justify;
+
+.thePost h4 {
+    font-size: 12px;
     margin-bottom: 1rem;
 }
 
 .tags a {
-    background-color: var(--white);
-    border: 2px solid black;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 1.8rem;
-    font-size: 14px;
-    padding: 0.8rem 2rem;
-    text-align: center;
-    color: var(--black);
-    text-transform: uppercase;
+   display: inline-block;
+   text-decoration: none;
+   margin: 0.5rem;
+   border: 2px solid var(--black);
+   color: var(--black);
+   border-radius: 5rem;
+   padding: 1rem 1.5rem;
+   margin-right: 0.3rem;
    
 }
 .bg-dark{
@@ -673,6 +658,113 @@ text-align: center;
 .tags h2 {
     margin-bottom: 2rem;
 }
+
+/******CONTACTS*******/
+.Contacts{
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background-color: #2b2b2b;
+}
+.contactpage__content h2{
+    color: var(--primary);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contactpage__content p{
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.contactitle h2{
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.contactpage__content ul{
+    list-style:none;
+    gap: 1rem;
+    
+}
+.contactsicon ul li{
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.contactsicon ul li p{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.contactsIconBot ul {
+    display: flex;
+    gap: 0rem;
+}
+
+.nametextbox{
+    width: 26rem;
+    height: 2rem;
+    background: white;
+    margin: 1rem;
+    color: var(--grey);
+}
+.nametextbox1{
+    width: 26rem;
+    height: 2rem;
+    background: white;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: var(--grey);
+}
+.nametextbox h4{
+    font-size: 1.5rem;
+    margin:1rem;
+}
+.nametextbox1 h4{
+    font-size: 1.5rem;
+    margin:0.5rem
+}
+.contactstextbox a{
+    background-color: var(--primary);
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    border-radius: 1.8rem;
+    font-size: 14px;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-left: 17rem;
+    margin-top: 3rem;
+}
+.contactpage__wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.messagetextbox{
+    width: 26rem;
+    height: 6rem;
+    background: white;
+    margin: 1rem;
+    color: var(--grey);
+}
+.messagetextbox h4{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    
+}
+.contactsBot ul{
+    display: flex;
+}
+.contactsBot ul li i{
+    color: var(--white)!important;
+}
+
+
 
 
 
