@@ -552,7 +552,7 @@ text-align: center;
     margin-top: 2rem;
     font-size: 3rem;
 }
-.trendspage p{
+.trendspage__content p{
     margin-bottom: 3rem;
     text-align: justify;
 }
@@ -585,14 +585,21 @@ text-align: center;
     text-align: justify;
 }
 
-.categories{
-    padding-top: 6rem;
+.categories ul{
+    list-style: none;
 }
-.categories{
+.categories ul li{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
 }
-
+.categories p {
+    margin-bottom: 1rem;
+}
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
 .cardpost1{
     display: flex;
     width: 500px;
@@ -621,12 +628,51 @@ text-align: center;
 .trendspage__wrapper{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 4rem;
+    grid-gap: 4rem;
 
+}
+.trendsRight h2{
+    margin-top: 9rem;
+    font-size: 2rem;
 }
 
 
 
+/*-----TrendsPage2-------*/
+
+.thePost{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+    margin: 2rem;
+}
+.thePost h4{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.tags a {
+    background-color: var(--white);
+    border: 2px solid black;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1.8rem;
+    font-size: 14px;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+   
+}
+.bg-dark{
+    background: var(--black) !important;
+}
+.t-white{
+    color: white !important;
+}
+.tags h2 {
+    margin-bottom: 2rem;
+}
 
 
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeVisualDesign</title>
+    <link rel = "stylesheet" href="./css/creativestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="">
+                    <h2>Creative<span>Visual</span>Design</h2>
+                </div>
+
+                <nav class="nav">
+                        
+                    
+                    <ul>
+                        <li><a href="#"><span>Home</span></a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </nav>
+                <div class="toggle__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                    
+
+            </div>
+
+        </div>
+
+    </header>
+    <script>
+
+        const nav = document.querySelector(".nav");
+        const toggleMenu = document.querySelector(".toggle__menu");
+        
+        toggleMenu.addEventListener("click",()=>{
+            toggleMenu.classList.toggle("open");
+            nav.classList.toggle("open");
+
+        })
+
+    </script>
+</body>
+</html>
